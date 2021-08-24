@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Roboto';
+  background-color: #f1f5f8;
+
+}
+
+main{
+  display: grid;
+  place-content: center;
+  background-color: #fff;
+  width: 35rem;
+  margin: 8rem auto 0;
+  border-radius: 0.35rem;
+  box-shadow: 0px 5px 15px rgb(0,0,0,0.2);
+  padding-bottom: 2rem;
+  transition: all 0.1s linear;
+}
+
+main:hover{
+  box-shadow: 0px 5px 15px rgb(0,0,0,0.3);
+}
+
+.title{
+  text-align: center;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+  color: #063251;
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+.form-control{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.form-add input{
+  background-color: #f1f5f8;
+  font-size: 1.2rem;
+  padding: .25rem .25rem .25rem 1rem;
+  border: transparent;
+  flex: 1 0 auto;
+  color: #758ea5;
+}
+
+
+.form-add button{
+  background-color: #a5d5f8;
+  border: transparent;
+  flex: 0 0 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0.25rem;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.list-item{
+  padding: 0.5rem;
+  margin: 0.5rem;
+  transition: all 0.1s linear;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item:hover{
+  background-color: #f1f5f8;
+}
+
+.edit-icon, .del-icon{
+  cursor: pointer;
+}
+
+.edit-icon{
+  color: #6be675;
+}
+.edit-icon:hover{
+  color: hsl(100, 47%, 44%);
+}
+
+.del-icon{
+  color: #e66b6b;
+}
+
+.del-icon:hover{
+  color: hsl(0, 85%, 39%);
+}
+
+
+.clear-items{
+  border: transparent;
+  padding: 0.25rem;
+  letter-spacing: 0.1rem;
+  font-size: .85rem;
+  text-transform: capitalize;
+  color: #e66f6f;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.1s linear;
+}
+
+.clear-items:hover{
+  color: white;
+  background:#e66f6f;
+}
